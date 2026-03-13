@@ -81,8 +81,9 @@ const FeaturedUMKM = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
-              className="group cursor-pointer overflow-hidden rounded-xl border border-border bg-background transition-shadow duration-200 hover:shadow-lg"
+              className="group overflow-hidden rounded-xl border border-border bg-background transition-shadow duration-200 hover:shadow-lg"
             >
+              <Link to={`/umkm/${umkm.id}`} className="block">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={umkm.image}
