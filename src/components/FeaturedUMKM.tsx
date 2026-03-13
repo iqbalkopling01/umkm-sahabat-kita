@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { MapPin, Star, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const umkmList = [
   {
+    id: "batik-margonda",
     name: "Batik Margonda",
     category: "Kerajinan & Fashion",
     location: "Pancoran Mas, Depok",
@@ -13,6 +15,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop",
   },
   {
+    id: "kopi-nusantara-depok",
     name: "Kopi Nusantara Depok",
     category: "Makanan & Minuman",
     location: "Beji, Depok",
@@ -22,6 +25,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
   },
   {
+    id: "keripik-bu-sari",
     name: "Keripik Bu Sari",
     category: "Makanan & Minuman",
     location: "Cimanggis, Depok",
@@ -31,6 +35,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop",
   },
   {
+    id: "furniture-jati-lestari",
     name: "Furniture Jati Lestari",
     category: "Kerajinan & Furnitur",
     location: "Sawangan, Depok",
@@ -76,8 +81,9 @@ const FeaturedUMKM = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
-              className="group cursor-pointer overflow-hidden rounded-xl border border-border bg-background transition-shadow duration-200 hover:shadow-lg"
+              className="group overflow-hidden rounded-xl border border-border bg-background transition-shadow duration-200 hover:shadow-lg"
             >
+              <Link to={`/umkm/${umkm.id}`} className="block">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={umkm.image}
@@ -107,6 +113,7 @@ const FeaturedUMKM = () => {
                   <span className="text-xs text-muted-foreground">{umkm.products} Produk</span>
                 </div>
               </div>
+              </Link>
             </motion.div>
           ))}
         </div>
