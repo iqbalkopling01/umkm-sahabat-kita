@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const umkmList = [
   {
+    id: "batik-margonda",
     name: "Batik Margonda",
     category: "Kerajinan & Fashion",
     location: "Pancoran Mas, Depok",
@@ -14,6 +15,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop",
   },
   {
+    id: "kopi-nusantara-depok",
     name: "Kopi Nusantara Depok",
     category: "Makanan & Minuman",
     location: "Beji, Depok",
@@ -23,6 +25,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
   },
   {
+    id: "keripik-bu-sari",
     name: "Keripik Bu Sari",
     category: "Makanan & Minuman",
     location: "Cimanggis, Depok",
@@ -32,6 +35,7 @@ const umkmList = [
     image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop",
   },
   {
+    id: "furniture-jati-lestari",
     name: "Furniture Jati Lestari",
     category: "Kerajinan & Furnitur",
     location: "Sawangan, Depok",
