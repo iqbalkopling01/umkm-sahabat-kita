@@ -67,9 +67,11 @@ const FeaturedUMKM = () => {
               Temukan dan dukung pelaku usaha lokal terbaik di Kota Depok.
             </p>
           </div>
-          <Button variant="outline" size="sm">
-            Lihat Semua UMKM
-          </Button>
+          <Link to="/umkm">
+            <Button variant="outline" size="sm">
+              Lihat Semua UMKM
+            </Button>
+          </Link>
         </motion.div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
