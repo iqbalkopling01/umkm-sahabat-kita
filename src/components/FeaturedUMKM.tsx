@@ -113,6 +113,7 @@ const FeaturedUMKM = () => {
                   <span className="text-xs text-muted-foreground">{umkm.products} Produk</span>
                 </div>
               </div>
+              </Link>
             </motion.div>
           ))}
         </div>
