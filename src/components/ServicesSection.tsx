@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FileText, Banknote, GraduationCap, Megaphone, ShieldCheck, Handshake } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
