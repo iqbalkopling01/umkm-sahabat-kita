@@ -26,6 +26,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/umkm" element={<UMKMCatalog />} />
           <Route path="/umkm/:id" element={<UMKMDetail />} />
+          <Route path="/pelatihan" element={<Pelatihan />} />
+          <Route path="/perizinan" element={<Perizinan />} />
+          <Route path="/sertifikasi" element={<Sertifikasi />} />
+          <Route path="/pendampingan" element={<Pendampingan />} />
+          <Route path="/pemasaran" element={<Pemasaran />} />
+          <Route path="/pembiayaan" element={<Pembiayaan />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
