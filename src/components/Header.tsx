@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,10 +11,12 @@ const navItems = [
     label: "Layanan",
     href: "#layanan",
     children: [
-      { label: "Perizinan", href: "#" },
-      { label: "Pembiayaan", href: "#" },
-      { label: "Pelatihan", href: "#" },
-      { label: "Pendampingan", href: "#" },
+      { label: "Perizinan", href: "/perizinan" },
+      { label: "Pembiayaan", href: "/pembiayaan" },
+      { label: "Pelatihan", href: "/pelatihan" },
+      { label: "Pemasaran", href: "/pemasaran" },
+      { label: "Sertifikasi", href: "/sertifikasi" },
+      { label: "Pendampingan", href: "/pendampingan" },
     ],
   },
   { label: "UMKM", href: "#umkm" },
@@ -66,13 +69,13 @@ const Header = () => {
                       className="absolute left-0 top-full z-50 mt-1 w-48 rounded-lg border border-border bg-card p-1 shadow-lg"
                     >
                       {item.children.map((child) => (
-                        <a
+                        <Link
                           key={child.label}
-                          href={child.href}
+                          to={child.href}
                           className="block rounded-md px-3 py-2 text-sm text-foreground/80 transition-colors hover:bg-accent hover:text-accent-foreground"
                         >
                           {child.label}
-                        </a>
+                        </Link>
                       ))}
                     </motion.div>
                   )}
