@@ -10,6 +10,7 @@ const services = [
     description: "Urus NIB, SIUP, dan izin usaha lainnya secara online dengan panduan langkah demi langkah.",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
+    href: "/perizinan",
   },
   {
     icon: Banknote,
@@ -17,6 +18,7 @@ const services = [
     description: "Temukan program KUR, modal usaha, dan skema pembiayaan yang sesuai kebutuhan UMKM Anda.",
     color: "text-primary",
     bgColor: "bg-primary-light",
+    href: "/pembiayaan",
   },
   {
     icon: GraduationCap,
@@ -24,6 +26,7 @@ const services = [
     description: "Ikuti pelatihan digital marketing, manajemen keuangan, dan keterampilan bisnis lainnya.",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
+    href: "/pelatihan",
   },
   {
     icon: Megaphone,
@@ -31,6 +34,7 @@ const services = [
     description: "Promosikan produk UMKM melalui marketplace, pameran, dan jaringan pemasaran terintegrasi.",
     color: "text-primary",
     bgColor: "bg-primary-light",
+    href: "/pemasaran",
   },
   {
     icon: ShieldCheck,
@@ -38,6 +42,7 @@ const services = [
     description: "Dapatkan sertifikat halal, BPOM, SNI, dan standarisasi produk untuk meningkatkan daya saing.",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
+    href: "/sertifikasi",
   },
   {
     icon: Handshake,
@@ -45,6 +50,7 @@ const services = [
     description: "Konsultasi bisnis dengan mentor berpengalaman untuk membantu pengembangan usaha Anda.",
     color: "text-primary",
     bgColor: "bg-primary-light",
+    href: "/pendampingan",
   },
 ];
 
