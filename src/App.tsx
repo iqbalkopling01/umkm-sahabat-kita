@@ -6,6 +6,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import UMKMDetail from "./pages/UMKMDetail.tsx";
 import UMKMCatalog from "./pages/UMKMCatalog.tsx";
+import Pelatihan from "./pages/Pelatihan.tsx";
+import Perizinan from "./pages/Perizinan.tsx";
+import Sertifikasi from "./pages/Sertifikasi.tsx";
+import Pendampingan from "./pages/Pendampingan.tsx";
+import Pemasaran from "./pages/Pemasaran.tsx";
+import Pembiayaan from "./pages/Pembiayaan.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
